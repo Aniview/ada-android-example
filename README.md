@@ -55,3 +55,36 @@ parent.addView(AdaView(context, config))
     </application>
 </manifest>
 ```
+
+## Observing Events
+ADA library provides different events to track ads:
+
+```kotlin
+val view: AdaView
+view.addListener(object : AdaViewListener {
+    /**
+     * New Ad was loaded
+     */
+    override fun onAdLoaded() {}
+
+    /**
+     * Failed to load an Ad
+     */
+    override fun onAdError() {}
+
+    /**
+     * Ad impression was triggered
+     */
+    override fun onAdImpression() {}
+
+    /**
+     * Next Ad can now be loaded
+     */
+    override fun onAdCanRefresh() {}
+
+    /**
+     * Ad was clicked
+     */
+    override fun onAdClicked(event: AdClickedEvent) {}
+})
+```
