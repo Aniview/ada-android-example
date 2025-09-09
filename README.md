@@ -32,7 +32,7 @@ dependencyResolutionManagement {
 2. Add Maven dependencies in the app's `build.gradle.kts` file:
 ```kts
 dependencies {
-    implementation("com.adservrs:ada:1.0.2")
+    implementation("com.adservrs:ada:1.1.0")
 }
 ```
 
