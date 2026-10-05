@@ -66,7 +66,7 @@ android {
 }
 
 dependencies {
-    implementation("com.adservrs:ada:1.5.1")
+    implementation("com.adservrs:ada:1.5.2")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
